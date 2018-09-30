@@ -1,13 +1,9 @@
 variable "ami" {
-  default = "ami-017b679ef539c260f"
+  default = "ami-0d7917aeb0baa27bf"
 }
 
 variable "cluster_size" {
   default = 3
-}
-
-variable "domain" {
-  default = "etcd.local"
 }
 
 variable "instance_type" {
@@ -23,4 +19,9 @@ variable "storage_iops" {
 }
 
 variable "vpc_id" {}
+
+variable "vpc_subnets" {
+  type = "list"
+}
+
 variable "hosted_zone_id" {}
